@@ -1,6 +1,6 @@
 {
   "name": "axios-singleton",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "Axios singleton instance for node and browserify projects",
   "main": "src/index.ts",
   "repository": "https://github.com/Quynh-Nguyen/axios-singleton",
