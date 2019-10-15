@@ -2,7 +2,7 @@
   "name": "axios-singleton",
   "version": "1.0.0",
   "description": "Axios singleton instance for node and browserify projects",
-  "main": "index.js",
+  "main": "src/index.ts",
   "repository": "https://github.com/Quynh-Nguyen/axios-singleton",
   "author": "Quynh Nguyen <likeguitarz@gmail.com>",
   "license": "MIT",
