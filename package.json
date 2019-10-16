@@ -1,6 +1,6 @@
 {
   "name": "axios-singleton",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Axios singleton instance for node and browserify projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "test": "mocha -r ts-node/register test/*.test.ts"
+    "test": "mocha -r ts-node/register test/*.test.ts",
+    "build": "tsc"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -22,7 +23,17 @@
     "mocha": "^6.2.1",
     "ts-node": "^8.4.1",
     "tslib": "^1.10.0",
+    "tslint": "^5.20.0",
     "typescript": "^3.6.4"
   },
-  "prepublish": "tsc"
+  "keywords": [
+    "axios",
+    "singleton"
+  ],
+  "nyc": {
+    "extension": [
+      ".ts"
+    ]
+  },
+  "prepublish": "yarn build"
 }
