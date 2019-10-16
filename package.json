@@ -1,8 +1,9 @@
 {
   "name": "axios-singleton",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-beta",
   "description": "Axios singleton instance for node and browserify projects",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/Quynh-Nguyen/axios-singleton",
   "author": "Quynh Nguyen <likeguitarz@gmail.com>",
   "license": "MIT",
@@ -22,5 +23,6 @@
     "ts-node": "^8.4.1",
     "tslib": "^1.10.0",
     "typescript": "^3.6.4"
-  }
+  },
+  "prepublish": "tsc"
 }
